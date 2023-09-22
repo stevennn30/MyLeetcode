@@ -1,0 +1,19 @@
+＃ 704 Binary Search
+
+解題思路：利用BS找到lowerbound(找到target=<的位子)，會有以下可能結果
+1. 所求解
+2. 找到大於target
+3. lowerbound 超出陣列
+
+
+int search(int* nums, int n, int target){
+    int l=0, r=n;
+    while(l != r){
+        int m = (l+r)/2;
+        if(*(nums+m) == target)return m;
+
+        else if(*(nums+m) >= target)r = m;
+        else l = m+1;
+    }
+    return -1;
+}
