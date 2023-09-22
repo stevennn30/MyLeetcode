@@ -1,0 +1,2 @@
+# 977. Squares of a Sorted Array
+解題思路：因為這個陣列是遞增且值可能為負，所以用2 pointers
