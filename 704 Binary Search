@@ -1,4 +1,4 @@
-＃ 704 Binary Search
+# 704 Binary Search
 
 解題思路：利用BS找到lowerbound(找到target=<的位子)，會有以下可能結果
 1. 所求解
