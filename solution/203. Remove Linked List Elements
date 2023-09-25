@@ -1,0 +1,24 @@
+# 203. Remove Linked List Elements
+
+解題思路：利用三個變數紀錄pre, cur, next，如果cur要移除就將pre和next連起來，需要特別注意cur ==head的特殊情況（更新head）
+
+# C
+struct ListNode* removeElements(struct ListNode* head, int val){
+    struct ListNode* pre =0, *p =head, *next;
+    while(p !=0){
+        next =p->next;
+        
+        //need removal
+        if(p->val ==val){
+            if(pre ==0)head =next;
+            else pre->next =next;
+            free(p);
+            p =next;
+        }else{
+            pre =p;
+            p =p->next;
+        }
+    }
+
+    return head;
+}
