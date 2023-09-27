@@ -10,7 +10,7 @@
  		走到第二個＊所消耗的步數就是相同的
 
 C++
-**
+/**
  * Definition for singly-linked list.
  * struct ListNode {
  *     int val;
@@ -23,15 +23,9 @@ public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         ListNode *ptrA = headA, *ptrB = headB;
         while(ptrA != ptrB){
-            if(ptrA == 0)ptrA = headB;
-            else{
-                ptrA = ptrA->next;
-            }
+            ptrA = ptrA == 0 ? headB : ptrA->next;
 
-            if(ptrB == 0)ptrB = headA;
-            else{
-                ptrB = ptrB->next;
-            }
+            ptrB = ptrB == 0 ? headA : ptrB->next;
         }
         return ptrA;
     }
