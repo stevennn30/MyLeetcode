@@ -1,0 +1,38 @@
+# Intersection of Two Linked Lists
+
+解題思路：假設a, b是listA, listB中各自不同的部分，＊為交點，c是交點後共同的內容
+		listA = a * c
+  		listB = b * c
+		因為兩list可能長度不一樣，所以在traverse時可能有一個指標會先走到null
+  		但如果將兩list合再一起，也就是
+	a * c b * c
+	b * c a * c
+ 		走到第二個＊所消耗的步數就是相同的
+
+C++
+**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        ListNode *ptrA = headA, *ptrB = headB;
+        while(ptrA != ptrB){
+            if(ptrA == 0)ptrA = headB;
+            else{
+                ptrA = ptrA->next;
+            }
+
+            if(ptrB == 0)ptrB = headA;
+            else{
+                ptrB = ptrB->next;
+            }
+        }
+        return ptrA;
+    }
+};
