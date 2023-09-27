@@ -9,3 +9,4 @@ Leetcode solution
 
 ## Linked List
 [203. Remove Linked List Elements](https://github.com/stevennn30/MyLeetcode/blob/3dd964a3628ba149f3a59e42133fd50eaf634dc9/solution/203.%20Remove%20Linked%20List%20Elements)
+[160. Intersection of Two Linked Lists](https://github.com/stevennn30/MyLeetcode/blob/bc0343e490d4782ae9ef22b1149d57b277ce86bc/solution/160.%20Intersection%20of%20Two%20Linked%20Lists)
