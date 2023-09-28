@@ -1,0 +1,52 @@
+# 24. Swap Nodes in Pairs
+
+解題思路：四個變數分別記錄，prevNode, curNode, nextNode, nextNextNode，當 curNode和 nextNode有東西時才需做交換
+
+更佳解：兩個變數分別記錄，prevNode & curNode，當 curNode和他的下一個有東西時才需做交換
+        額外增加一個dummyHead 就不用考慮更動head的特殊情況
+//C++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* swapPairs(ListNode* head) {
+        ListNode* pre = head, *cur, *next, *nextNext;
+        if (head){
+            cur = head->next;
+            if (cur) {
+                next = cur->next;
+                cur->next = pre;
+                pre->next = next;
+                head = cur;
+
+                //check next node
+                cur = next;
+                if (next) next = next->next;
+                while (next) {
+                    nextNext = next->next;
+                    pre->next = next;
+                    next->next = cur;
+                    cur->next = nextNext;
+
+                    pre = cur;
+                    cur = nextNext;
+                    if (nextNext) {
+                        next = nextNext->next;
+                    } else {
+                        break;
+                    }
+                }
+            }
+        }
+
+        return head;
+    }
+}; 
