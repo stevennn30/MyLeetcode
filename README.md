@@ -9,4 +9,5 @@ Leetcode solution
 
 ## Linked List
 [203. Remove Linked List Elements](https://github.com/stevennn30/MyLeetcode/blob/3dd964a3628ba149f3a59e42133fd50eaf634dc9/solution/203.%20Remove%20Linked%20List%20Elements)  
-[160. Intersection of Two Linked Lists](https://github.com/stevennn30/MyLeetcode/blob/bc0343e490d4782ae9ef22b1149d57b277ce86bc/solution/160.%20Intersection%20of%20Two%20Linked%20Lists)
+[160. Intersection of Two Linked Lists](https://github.com/stevennn30/MyLeetcode/blob/bc0343e490d4782ae9ef22b1149d57b277ce86bc/solution/160.%20Intersection%20of%20Two%20Linked%20Lists)  
+[024. Swap Nodes in Pairs](https://github.com/stevennn30/MyLeetcode/blob/c0759e8103d220e8740ec62cecff5a9dfee67f9a/solution/024.%20Swap%20Nodes%20in%20Pairs)
