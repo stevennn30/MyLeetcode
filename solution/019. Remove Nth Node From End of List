@@ -1,0 +1,40 @@
+# 019. Remove Nth Node From End of List
+
+解題思路：先找出listLen 的總長度，倒數第n 個數即為index是listLen - n 的那一個，照一般方法移除即完成
+
+//c++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        int listLen = 0, toBeDelete = 0, idx = 0;
+        ListNode *dummyHead = new ListNode(0, head), *preNode = dummyHead, *curNode = head;
+
+    //count list len
+        while (curNode) {
+            listLen++;
+            curNode = curNode->next;
+        }
+        curNode = head;
+
+    //idx to be delete
+        toBeDelete = listLen - n;
+        cout << toBeDelete << endl;
+        while (toBeDelete != idx){
+            preNode = curNode;
+            curNode = curNode->next;
+            idx++;
+        }
+        preNode->next = curNode->next;
+        return dummyHead->next;
+    }
+};
