@@ -1,6 +1,7 @@
 # 019. Remove Nth Node From End of List
 
 解題思路：先找出listLen 的總長度，倒數第n 個數即為index是listLen - n 的那一個，照一般方法移除即完成
+    可以注意的是用dummyHead 紀錄開頭位置，這樣就不用特別考慮head被移除的情況!!
 
 //c++
 /**
