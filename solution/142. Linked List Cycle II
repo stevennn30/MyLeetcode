@@ -1,0 +1,29 @@
+# 142. Linked List Cycle II
+
+解題思路：用兩個for loop traverse list(時間複雜度為n^2)
+
+#c++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *detectCycle(ListNode *head) {
+        if (!head) return NULL;
+        ListNode *fixNode = head, *iterateNode = head->next;
+
+        for (int i = 0; i < (int)1e4+1 && fixNode; i++, fixNode = fixNode->next) {
+            iterateNode = fixNode->next;
+            for (int j = 0; j < (int)1e4+1 && iterateNode; j++, iterateNode = iterateNode->next) {
+                if (iterateNode == fixNode) return fixNode;
+            }
+        }
+
+        return NULL;
+    }
+};
