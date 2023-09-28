@@ -3,6 +3,8 @@
 解題思路：先找出listLen 的總長度，倒數第n 個數即為index是listLen - n 的那一個，照一般方法移除即完成
     可以注意的是用dummyHead 紀錄開頭位置，這樣就不用特別考慮head被移除的情況!!
 
+優化的作法：２pointers，fastPtr 領先 slowPtr n個，當fastPtr是最後一個元素，slowPtr 下一個即是要刪除的對象
+
 //c++
 /**
  * Definition for singly-linked list.
