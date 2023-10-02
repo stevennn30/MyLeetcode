@@ -1,0 +1,46 @@
+# 1002. Find Common Characters
+
+大大卡關：ansSize更新錯誤，連帶造成後續malloc ans[][]時陣列開不夠大，寫入答案造成DEADLYSIGNAL!!!
+解題思路：
+
+//c
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+char ** commonChars(char ** words, int wordsSize, int* returnSize){
+    int count[100][26] = {0};
+    int exist[26] = {0};
+    int ansSize = 0;
+    for (int i = 0; i < wordsSize; i++) {
+        for (int j = 0; j < strlen(words[i]); j++) {
+            count[i][words[i][j] - 'a']++;
+        }
+    }
+
+    for (int i = 0; i < 26; i++) {
+        int minExistAlpha = 101;
+        for (int j = 0; j < wordsSize; j++) {
+            minExistAlpha = minExistAlpha > count[j][i] ? count[j][i] : minExistAlpha;
+            if (count[j][i] == 0) break;
+            if (j == wordsSize-1) {
+                ansSize += minExistAlpha;
+                exist[i] = minExistAlpha;
+            }
+        }
+    }
+
+    char** ans = calloc(ansSize, sizeof(char*));
+    for (int i = 0; i < ansSize; i++) {
+        ans[i] = calloc(3, sizeof(char));
+    }
+    *returnSize = ansSize;
+    int index = 0;
+    for (int i = 0; i < 26; i++) {
+        for (int j = 0; j < exist[i]; j++) {
+            char c = (char)(i+'a');
+            //strncpy(&ans[index++][0], &c, 1);
+            ans[index++][0] = c;
+        }
+    }
+    return ans;
+}
