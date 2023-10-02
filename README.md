@@ -16,7 +16,7 @@ Leetcode solution
 
 ## Hash Table
 [242. Valid Anagram]()  
-[]()  
+[1002. Find Common Characters](https://github.com/stevennn30/MyLeetcode/blob/f7871f5f525768150cacf4c38df50d70a2eb3b71/solution/1002.%20Find%20Common%20Characters)  
 []()  
 []()  
 
