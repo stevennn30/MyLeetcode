@@ -14,5 +14,11 @@ Leetcode solution
 [019. Remove Nth Node From End of List](https://github.com/stevennn30/MyLeetcode/blob/7b72194a1241c22c2db83f4b284213bc9e8c06e8/solution/019.%20Remove%20Nth%20Node%20From%20End%20of%20List)    
 [142. Linked List Cycle II](https://github.com/stevennn30/MyLeetcode/blob/d6d2b899b42ae53819567e9c2a117b6bc4a18aa2/solution/142.%20Linked%20List%20Cycle%20II)    
 
+## Hash Table
+[242. Valid Anagram]()  
+[]()  
+[]()  
+[]()  
+
 ## String
 [344. Reverse String](https://github.com/stevennn30/MyLeetcode/blob/a46bd03379102831964ae4e4838d336b173f92ea/solution/344.%20Reverse%20String)  
