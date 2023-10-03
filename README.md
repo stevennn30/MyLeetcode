@@ -15,6 +15,13 @@ Leetcode solution
 [142. Linked List Cycle II](https://github.com/stevennn30/MyLeetcode/blob/d6d2b899b42ae53819567e9c2a117b6bc4a18aa2/solution/142.%20Linked%20List%20Cycle%20II)    
 
 ## Hash Table
+#### 學到的東西
+1. 建立uamp  unordered_map<key, value> umap {}
+2. 尋找某key  umap.count(key) return true if key is in umap, return false otherwise
+3. 加入元素   umap[key] = value
+4. c++ 可以直接return {}
+
+#### 題目
 [242. Valid Anagram](https://github.com/stevennn30/MyLeetcode/blob/6daf557284c4bf1abdba5303efc30769ef0125f5/solution/242.%20Valid%20Anagram)  
 [1002. Find Common Characters](https://github.com/stevennn30/MyLeetcode/blob/f7871f5f525768150cacf4c38df50d70a2eb3b71/solution/1002.%20Find%20Common%20Characters)  
 [349. Intersection of Two Arrays]()  
