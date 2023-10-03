@@ -18,6 +18,9 @@ Leetcode solution
 [242. Valid Anagram]()  
 [1002. Find Common Characters](https://github.com/stevennn30/MyLeetcode/blob/f7871f5f525768150cacf4c38df50d70a2eb3b71/solution/1002.%20Find%20Common%20Characters)  
 [349. Intersection of Two Arrays]()  
+[001. Two Sum](https://github.com/stevennn30/MyLeetcode/blob/6e366c3e4f960499644dd65e50b0814f84eb67fb/solution/001.%20Two%20Sum)  
+[]()  
+[]()  
 []()  
 
 ## String
