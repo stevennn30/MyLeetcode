@@ -16,10 +16,11 @@ Leetcode solution
 
 ## Hash Table
 #### 學到的東西
-1. 建立uamp  unordered_map<key, value> umap {}
-2. 尋找某key  umap.count(key) return true if key is in umap, return false otherwise
-3. 加入元素   umap[key] = value
-4. c++ 可以直接return {}
+1. 建立umap   unordered_map<key, value> umap {}
+2. 尋找某key   umap.count(key) return true if key is in umap, return false otherwise
+3. 加入元素    umap[key] = value
+4. 取value值   auto i : umap ---> i.second (用法和struct很像)
+5. c++ 可以直接return {}
 
 #### 題目
 [242. Valid Anagram](https://github.com/stevennn30/MyLeetcode/blob/6daf557284c4bf1abdba5303efc30769ef0125f5/solution/242.%20Valid%20Anagram)  
