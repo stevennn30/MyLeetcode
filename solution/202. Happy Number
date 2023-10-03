@@ -1,0 +1,23 @@
+# 202. Happy Number
+
+//c++
+class Solution {
+public:
+    bool isHappy(int n) {
+        unordered_map<int, int> exist;
+
+        while (n != 1) {
+            int iter = 0;
+
+            while (n != 0) {
+                iter += (n % 10) * (n % 10);
+                n /= 10;
+            }
+
+            if (exist.count(iter))return false;
+            exist[iter] = 1;
+            n = iter;
+        }
+        return true;
+    }
+};
