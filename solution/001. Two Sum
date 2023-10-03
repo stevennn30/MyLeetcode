@@ -1,0 +1,42 @@
+# 001. Two Sum
+
+解題思路：
+1. brute force O(n^2)
+2. hashmap O(n):
+    a利用一個for loop掃過所有數字
+    b找hashmap中是否有complement = target - num[i]
+    c如果沒有就將該num[i]加進hashmap
+    d重複b, c步驟直到找到所求和
+    e回傳 i 和 complement的value
+
+學到的知識：
+1. vector 是一種array，用法是vector<type> name 並透過{}來初始化
+2. unordered_map<key_type, value_type> name
+3. 透過map_name[key] = value 加入內容
+4. use map_name.count(key) return true if key exist, return 0 otherwise
+5. c++ 中回傳陣列不用malloc，直接用{}
+6. unorder_map 的key是唯一的
+7. vector.size()
+
+//c++
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> usedNum;
+        vector<int> ans;
+
+        for (int i = 0; i < nums.size(); i++) {
+            int want = target - nums[i];
+
+        //start iterating
+            unordered_map<int, int>::iterator iter = usedNum.find(want);
+            if (iter != usedNum.end()) {
+                ans.push_back(i);
+                ans.push_back(iter->second);
+            } else {
+                usedNum[nums[i]] = i;
+            }
+        }
+        return ans;
+    }
+};
