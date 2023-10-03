@@ -15,7 +15,7 @@ Leetcode solution
 [142. Linked List Cycle II](https://github.com/stevennn30/MyLeetcode/blob/d6d2b899b42ae53819567e9c2a117b6bc4a18aa2/solution/142.%20Linked%20List%20Cycle%20II)    
 
 ## Hash Table
-[242. Valid Anagram]()  
+[242. Valid Anagram](https://github.com/stevennn30/MyLeetcode/blob/6daf557284c4bf1abdba5303efc30769ef0125f5/solution/242.%20Valid%20Anagram)  
 [1002. Find Common Characters](https://github.com/stevennn30/MyLeetcode/blob/f7871f5f525768150cacf4c38df50d70a2eb3b71/solution/1002.%20Find%20Common%20Characters)  
 [349. Intersection of Two Arrays]()  
 [001. Two Sum](https://github.com/stevennn30/MyLeetcode/blob/6e366c3e4f960499644dd65e50b0814f84eb67fb/solution/001.%20Two%20Sum)  
