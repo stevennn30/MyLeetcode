@@ -1,0 +1,23 @@
+# 242. Valid Anagram
+
+解題思路：用hashmap記錄字母出現次數，key是字母，value是該字母出現次數
+    auto i : umap
+    透過i.second存取value
+
+//c++
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        unordered_map<char, int> count;
+        for (auto i : s) {
+            count[i]++;
+        }
+        for (auto i : t) {
+            count[i]--;
+        }
+        for (auto i : count) {
+            if (i.second != 0) return false;
+        }
+        return true;
+    }
+};
