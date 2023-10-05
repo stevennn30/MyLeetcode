@@ -19,7 +19,7 @@ Leetcode solution
 1. 建立umap   unordered_map<key, value> umap {}
 2. 尋找某key是否存在   umap.count(key) return true if key is in umap, return false otherwise
 3. 加入元素    umap[key] = value
-4. 取value值   auto i : umap ---> i.second (用法和struct很像)
+4. 取map值   auto i : umap ---> i.first / i.second (用法和struct很像)
 5. c++ 可以直接return {}
 6. .push_back()可以直接把東西放進vector
 7. string(1, 1+'a') 把char 變成string
