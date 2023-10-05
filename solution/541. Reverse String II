@@ -1,1 +1,4 @@
 #541. Reverse String II
+
+解題思路：利用雙指標，每次swap(i, i + 2k -1)的內容
+c++內建swap(), min()
