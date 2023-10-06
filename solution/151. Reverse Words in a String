@@ -1,3 +1,56 @@
 # 151. Reverse Words in a String
 
 //c++
+/*
+Approach : iterate words from end, l is head of each word, r is end of each word
+add "space" if there's another word followed
+time complexity : O(n)
+space complexity : O(n)
+*/
+
+class Solution {
+private:
+    int afterIsSpace(string s, int index) {        //return index of first nonspace before s[index], return -1 if not fonud
+        while (index >= 0 && isspace(s[index])) {
+            index--;
+        }
+        if (index < 0) return -1;
+        else return index;
+    }
+    int beforeIsSpace(string s, int index) {        //return index of first nonspace before s[index]
+        while (index >= 0 && !isspace(s[index])) {
+            index--;
+        }
+        index++;
+        return index;
+    }
+    void insertAns(string &ans, string s, int l, int r) {
+        while (l <= r) {
+            ans.push_back(s[l++]);
+        }
+    }
+public:
+    string reverseWords(string s) {
+        //for (auto i : s) cout << isspace(i) << endl;
+
+        string ans;
+        int r, l;       //r is rightmost char not space, l is leftmost char not space
+        r = afterIsSpace(s, s.size() - 1);
+        l = beforeIsSpace(s, r);
+        cout << l << " r " << r << endl;
+
+        insertAns(ans, s, l, r);        //insert s[l] ~ s[r] to ans 
+        
+        r = afterIsSpace(s, l - 1);     
+
+        while (r >= 0) {
+            ans +=" ";                  //if there's another iteration plus " "
+            l = beforeIsSpace(s, r);
+            cout << l << " r " << r << endl;
+            insertAns(ans, s, l, r);
+
+            r = afterIsSpace(s, l-1);
+        }
+        return ans;
+    }
+};
