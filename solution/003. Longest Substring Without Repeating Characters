@@ -1,0 +1,3 @@
+# 3. Longest Substring Without Repeating Characters
+
+解題思路：本題的numsSize 用nested loop 會TLE，利用sliding window O(2n)，左右指標為範圍，如果右指標指到的東西已經拿過就將左指標更新成前一個該元素
