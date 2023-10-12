@@ -1,7 +1,7 @@
 # 80. Remove Duplicates from Sorted Array II
 
 解題思路：
-1. 用unordered_map 紀錄出現過的數字，map[i]可以查看該元素的內容
+1. 用unordered_map 紀錄出現過的數字，map[i]可以查看該元素的內容，in C++ #include<unordered_map>
 2. Since the given array is non-decreasing order, 將nums[i] and nums[index]比較即可
 
 (condition1 || condition2) if condition1 is True, then condition2 won't be checked.
