@@ -2,3 +2,4 @@
 
 解題思路：本題的numsSize 用nested loop 會TLE，利用sliding window O(2n)，左右指標為範圍，如果右指標指到的東西已經拿過就將左指標更新成前一個該元素
 另外陣列中的元素可能是ASCII table 中共128個
+可以記錄元素出現的位置或是次數
