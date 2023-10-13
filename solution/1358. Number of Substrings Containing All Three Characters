@@ -1,0 +1,9 @@
+# 1358. Number of Substrings Containing All Three Characters
+
+The idea is to shift the window until requirement are satisfied, then do corresponding response.
+
+something like below
+while (window is valid) {
+    corresponding reponse
+    shift to next window
+}
