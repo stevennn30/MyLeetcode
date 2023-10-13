@@ -12,12 +12,14 @@ Leetcode solution
 The idea behind this is shifting the window until requirement are satisfied, then do corresponding response.
 
 Template would be something like below：  
+<pre>
 while (usable indices) {  
     while (window is valid) {  
         corresponding reponse  
         shift to next window  
     }  
 }  
+</pre>
 
 [1358. Number of Substrings Containing All Three Characters]()  
 []()
@@ -32,14 +34,16 @@ while (usable indices) {
 [142. Linked List Cycle II](https://github.com/stevennn30/MyLeetcode/blob/d6d2b899b42ae53819567e9c2a117b6bc4a18aa2/solution/142.%20Linked%20List%20Cycle%20II)    
 
 ## Hash Table
-#### 學到的東西
-1. 建立umap   unordered_map<key, value> umap {}
+#### Concepts
+<pre>
+1. 建立umap           unordered_map<key, value> umap {}
 2. 尋找某key是否存在   umap.count(key) return true if key is in umap, return false otherwise
-3. 加入元素    umap[key] = value
-4. 取map值   auto i : umap ---> i.first / i.second (用法和struct很像)
+3. 加入元素            umap[key] = value
+4. 取map值             auto i : umap ---> i.first / i.second (用法和struct很像)
 5. c++ 可以直接return {}
 6. .push_back()可以直接把東西放進vector
 7. string(1, 1+'a') 把char 變成string
+    </pre>
 
 #### 題目
 [242. Valid Anagram](https://github.com/stevennn30/MyLeetcode/blob/6daf557284c4bf1abdba5303efc30769ef0125f5/solution/242.%20Valid%20Anagram)  
