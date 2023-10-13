@@ -52,7 +52,9 @@ while (usable indices) {
 [349. Intersection of Two Arrays]()  
 [202. Happy Number](https://github.com/stevennn30/MyLeetcode/blob/0d76f71bf5af7c78efa41ed29283c92cf5360dcb/solution/202.%20Happy%20Number)  
 [001. Two Sum](https://github.com/stevennn30/MyLeetcode/blob/6e366c3e4f960499644dd65e50b0814f84eb67fb/solution/001.%20Two%20Sum)  
+[454. 4Sum II](https://github.com/stevennn30/MyLeetcode/blob/227319e186d3304c16729589edfed7f54011c808/solution/454.%204Sum%20II.md)  
 []()  
+[015. 3Sum](https://github.com/stevennn30/MyLeetcode/blob/d32d5291c05674246d2b96d7122d8839b95c7a53/solution/015.%203Sum.md)  
 []()  
 
 ## String
