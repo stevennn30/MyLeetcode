@@ -11,13 +11,13 @@ Leetcode solution
 #### Sliding Window
 The idea behind this is shifting the window until requirement are satisfied, then do corresponding response.
 
-Template would be something like below：
-while (usable indices) {
-    while (window is valid) {
-        corresponding reponse
-        shift to next window
-    }
-}
+Template would be something like below：  
+while (usable indices) {  
+    while (window is valid) {  
+        corresponding reponse  
+        shift to next window  
+    }  
+}  
 
 [1358. Number of Substrings Containing All Three Characters]()  
 []()
