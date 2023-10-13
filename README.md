@@ -9,6 +9,16 @@ Leetcode solution
 [059. Spiral Matrix ll](https://github.com/stevennn30/MyLeetcode/blob/4ff9b29b734974ebbf53b01b08da4b0abf1e703e/solution/059.%20Spiral%20Matrix%20ll)  
 
 #### Sliding Window
+The idea behind this is shifting the window until requirement are satisfied, then do corresponding response.
+
+Template would be something like below：
+while (usable indices) {
+    while (window is valid) {
+        corresponding reponse
+        shift to next window
+    }
+}
+
 [1358. Number of Substrings Containing All Three Characters]()  
 []()
 []()  
