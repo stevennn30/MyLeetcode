@@ -14,7 +14,7 @@ The idea behind it is shifting the window until requirement are satisfied, then 
 Template would be something like below：  
 <pre>
 while (usable indices) {  
-    while (window is valid) {  
+    if (window is valid) {  
         corresponding reponse  
         shift to next window  
     }  
