@@ -69,7 +69,7 @@ while (usable indices) {
 ## Stack & Queue
 [232. Implement Queue using Stacks](https://github.com/stevennn30/MyLeetcode/blob/574c7ac1c27be4a7ac509109f8a3f232d94cc721/solution/232.%20Implement%20Queue%20using%20Stacks.md)  
 [225. Implement Stack using Queues](https://github.com/stevennn30/MyLeetcode/blob/3238318527b095d16948d3c697a8ecbadfc99fa3/solution/225.%20Implement%20Stack%20using%20Queues.md)  
-[]()  
+[020. Valid Parentheses.md](https://github.com/stevennn30/MyLeetcode/blob/714dd5e7f1e83de0e0b55bbc95ae783547df41cb/solution/020.%20Valid%20Parentheses.md)  
 []()  
 []()  
 []()  
