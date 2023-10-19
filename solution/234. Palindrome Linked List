@@ -1,0 +1,4 @@
+# 234. Palindrome Linked List
+
+## Idea
+把linked list中的內容存到deque中，然後從deque兩端比較是否相等即可
