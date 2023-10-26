@@ -81,6 +81,8 @@ while (usable indices) {
 []()  
 
 ## Binary Tree
+1. swap() to interchange to variable
+2. reverse() to reverse vector
 [Concept](https://github.com/stevennn30/MyLeetcode/blob/5df1ee93193f33bd74dad6ad8085a8252a290bab/Topics/Binary%20Tree.md)  
 [144. Binary Tree Preorder Traversal]()  
 #### layer traversal 
