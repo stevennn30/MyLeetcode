@@ -87,7 +87,10 @@ while (usable indices) {
 4. DFS template
 5. 
 [Concept](https://github.com/stevennn30/MyLeetcode/blob/5df1ee93193f33bd74dad6ad8085a8252a290bab/Topics/Binary%20Tree.md)  
-[144. Binary Tree Preorder Traversal]()  
+[144. Binary Tree Preorder Traversal](https://github.com/stevennn30/MyLeetcode/blob/24b83e12b5edbb5f460dbf29c3dda7362ced8219/solution/144.%20Binary%20Tree%20Preorder%20Traversal.md)
+[145. Binary Tree Postorder Traversal](https://github.com/stevennn30/MyLeetcode/blob/24b83e12b5edbb5f460dbf29c3dda7362ced8219/solution/145.%20Binary%20Tree%20Postorder%20Traversal.md)
+[94. Binary Tree Inorder Traversal](https://github.com/stevennn30/MyLeetcode/blob/d7a22edd76673be191bfa82c3202343004b19ee0/solution/094.%20Binary%20Tree%20Inorder%20Traversal.md)
+[102. Binary Tree Level Order Traversal](https://github.com/stevennn30/MyLeetcode/blob/60c7d78766c20022bf945053b3de6a693d47d68b/solution/102.%20Binary%20Tree%20Level%20Order%20Traversal.md)  
 #### layer traversal 
 [102. Binary Tree Level Order Traversal]()  
 [107. Binary Tree Level Order Traversal II]()  
