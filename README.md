@@ -86,22 +86,22 @@ while (usable indices) {
 3. BFS template
 4. DFS template
 5. 
-[Concept](https://github.com/stevennn30/MyLeetcode/blob/5df1ee93193f33bd74dad6ad8085a8252a290bab/Topics/Binary%20Tree.md)  
-[144. Binary Tree Preorder Traversal](https://github.com/stevennn30/MyLeetcode/blob/24b83e12b5edbb5f460dbf29c3dda7362ced8219/solution/144.%20Binary%20Tree%20Preorder%20Traversal.md)
-[145. Binary Tree Postorder Traversal](https://github.com/stevennn30/MyLeetcode/blob/24b83e12b5edbb5f460dbf29c3dda7362ced8219/solution/145.%20Binary%20Tree%20Postorder%20Traversal.md)
-[94. Binary Tree Inorder Traversal](https://github.com/stevennn30/MyLeetcode/blob/d7a22edd76673be191bfa82c3202343004b19ee0/solution/094.%20Binary%20Tree%20Inorder%20Traversal.md)
+[Concept](https://github.com/stevennn30/MyLeetcode/blob/5df1ee93193f33bd74dad6ad8085a8252a290bab/Topics/Binary%20Tree.md)
+#### Binary tree triversal
+[144. Binary Tree Preorder Traversal](https://github.com/stevennn30/MyLeetcode/blob/24b83e12b5edbb5f460dbf29c3dda7362ced8219/solution/144.%20Binary%20Tree%20Preorder%20Traversal.md)  
+[145. Binary Tree Postorder Traversal](https://github.com/stevennn30/MyLeetcode/blob/24b83e12b5edbb5f460dbf29c3dda7362ced8219/solution/145.%20Binary%20Tree%20Postorder%20Traversal.md)  
+[94. Binary Tree Inorder Traversal](https://github.com/stevennn30/MyLeetcode/blob/d7a22edd76673be191bfa82c3202343004b19ee0/solution/094.%20Binary%20Tree%20Inorder%20Traversal.md)  
 [102. Binary Tree Level Order Traversal](https://github.com/stevennn30/MyLeetcode/blob/60c7d78766c20022bf945053b3de6a693d47d68b/solution/102.%20Binary%20Tree%20Level%20Order%20Traversal.md)  
-#### layer traversal 
+###### BFS traversal 
 [102. Binary Tree Level Order Traversal]()  
 [107. Binary Tree Level Order Traversal II]()  
 [199. Binary Tree Right Side View]()  
 [637. Average of Levels in Binary Tree]()  
-[]()  
------
-[226. Invert Binary Tree]()  
-[222. Count Complete Tree Nodes]()  
-[110. Balanced Binary Tree]()  
-#### Compare two subtree
+[not 429. N-ary Tree Level Order Traversal]()  
+[515. Find Largest Value in Each Tree Row](https://github.com/stevennn30/MyLeetcode/blob/ad1803cc4c8b93a982bed21ee33977ece6b33b0e/solution/515.%20Find%20Largest%20Value%20in%20Each%20Tree%20Row.md)  
+[not 116. Populating Next Right Pointers in Each Node](https://github.com/stevennn30/MyLeetcode/blob/b5f6e4c75438509e80101fa8eefd971f414d2786/solution/116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md)  
+[not 117. Populating Next Right Pointers in Each Node II](https://github.com/stevennn30/MyLeetcode/blob/a0cab34692f90301e4fb5125cf4f319d9b25b543/solution/117.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II.md)  
+#### Properties of tree
 [101. Symmetric Tree](https://github.com/stevennn30/MyLeetcode/blob/7a1ef0058d76e69e7cc3ec5bab7a01892abeb0a8/solution/101.%20Symmetric%20Tree.md)  
 [100. Same Tree](https://github.com/stevennn30/MyLeetcode/blob/7a1ef0058d76e69e7cc3ec5bab7a01892abeb0a8/solution/100.%20Same%20Tree.md)  
 [not 572. Subtree of Another Tree]()  
@@ -112,6 +112,8 @@ while (usable indices) {
 [222. Count Complete Tree Nodes](https://github.com/stevennn30/MyLeetcode/blob/a9853cf2fc3227c0c9cbad7db952d77bef96da7f/solution/222.%20Count%20Complete%20Tree%20Nodes.md)  
 [110. Balanced Binary Tree](https://github.com/stevennn30/MyLeetcode/blob/a9853cf2fc3227c0c9cbad7db952d77bef96da7f/solution/110.%20Balanced%20Binary%20Tree.md)  
 []()  
+#### Revise tree
+[226. Invert Binary Tree]()  
 []()  
 []()  
 []()  
