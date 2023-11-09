@@ -118,6 +118,7 @@ construct a tree by inorder & postorder:
 1. 找到inorder切割點
 2. 切割inorder
 3. 切割postorder
+利用index去切割vector會比創造新vector省時間
 ```
 [226. Invert Binary Tree]()  
 []()  
