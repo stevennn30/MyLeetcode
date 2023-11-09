@@ -111,10 +111,17 @@ while (usable indices) {
 [222. Count Complete Tree Nodes](https://github.com/stevennn30/MyLeetcode/blob/a9853cf2fc3227c0c9cbad7db952d77bef96da7f/solution/222.%20Count%20Complete%20Tree%20Nodes.md)  
 [110. Balanced Binary Tree](https://github.com/stevennn30/MyLeetcode/blob/a9853cf2fc3227c0c9cbad7db952d77bef96da7f/solution/110.%20Balanced%20Binary%20Tree.md)  
 []()  
-### Revise tree
+### Revise / Construct tree
+``` 
+construct a tree by inorder & postorder:
+停止條件會是什麼??
+1. 找到inorder切割點
+2. 切割inorder
+3. 切割postorder
+```
 [226. Invert Binary Tree]()  
 []()  
-[]()  
+[654. Maximum Binary Tree]()  
 []()  
 []()  
 []()  
