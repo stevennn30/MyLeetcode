@@ -134,6 +134,41 @@ construct a tree by inorder & postorder:
 []()  
 []()  
 
+# BACKTRACKING
+### template
+<pre>
+    void backTracking(string digits, int curIndex) {
+        if (satisfy condition) {
+            process answer
+            return;
+        }
+        
+        for (int i = 0; i < key[digits[curIndex]].size(); i++) {
+            path.push_back(i);
+            backTracking(digits, curIndex + 1);
+            path.pop_back();
+        }
+    }
+</pre>
+[77. Combinations](https://github.com/stevennn30/MyLeetcode/blob/854896b9b03080d41559d5619e0127182cf30982/solution/077.%20Combinations.md)  
+[216. Combination Sum III]()  
+[17. Letter Combinations of a Phone Number]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+
+
 # GREEDY
 [134. Gas Station]()  
 []()  
