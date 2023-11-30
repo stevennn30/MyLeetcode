@@ -153,6 +153,7 @@ construct a tree by inorder & postorder:
 1. int array ---> int *arr = new int[size](initialize if needed)
 2. vector<int> vec(number of elements, val to be initialize)
 3. vector<int> vec(iterator begin, it end) ---> [begin, end)
+4. vector back() return reference of last element
    
 [77. Combinations](https://github.com/stevennn30/MyLeetcode/blob/854896b9b03080d41559d5619e0127182cf30982/solution/077.%20Combinations.md)  
 [216. Combination Sum III]()  
@@ -161,6 +162,8 @@ construct a tree by inorder & postorder:
 [40. Combination Sum II](https://github.com/stevennn30/MyLeetcode/blob/e1fe20833d7a1f8a1eb11f69da6522331c0ca8ad/solution/040.%20Combination%20Sum%20II.md)  
 [131. Palindrome Partitioning](https://github.com/stevennn30/MyLeetcode/blob/84accfedf9077540e8c212a821e02ff64942ff71/solution/131.%20Palindrome%20Partitioning.md)  
 [93. Restore IP Addresses]()  
+[491. Non-decreasing Subsequences]()  
+[]()  
 [46. Permutations]()  
 []()  
 []()  
