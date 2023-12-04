@@ -136,7 +136,7 @@ construct a tree by inorder & postorder:
 
 # BACKTRACKING
 ### template
-<pre>
+```CPP
     void backTracking(string digits, int curIndex) {
         if (satisfy condition) {
             process answer
@@ -149,7 +149,7 @@ construct a tree by inorder & postorder:
             path.pop_back();
         }
     }
-</pre>
+```
 1. int array ---> int *arr = new int[size](initialize if needed)
 2. vector<int> vec(number of elements, val to be initialize)
 3. vector<int> vec(iterator begin, it end) ---> [begin, end)
