@@ -187,3 +187,58 @@ construct a tree by inorder & postorder:
 []()  
 []()  
 []()  
+
+# GRAPH
+```
+DFS
+int visit[501][501] = {0};
+int dir[4][2] = {1, 0, -1, 0, 0, 1, 0, -1};                                             //上下左右四個方向 
+
+void dfs(vector<vector<int>>& grid, int row, int col) {
+    for (int i = 0; i < 4; i++) {
+        int x = row + dir[i][0];
+        int y = col + dir[i][1];
+
+        if (x < 0 || x >= grid.size() || y < 0 || y >= grid[0].size()) continue;        //出界的點跳過
+        if (grid[x][y] != 1 || visit[x][y] == 1) continue;                              //走過的點跳過
+
+        visit[x][y] = 1;
+        dfs(grid, x, y);
+    }
+}
+```
+```
+BFS
+int dir[4][2] = {1, 0, -1, 0, 0, 1, 0, -1};
+void bfs(vector<vector<char>>& grid, int x, int y, vector<vector<bool>> &visit) {
+    queue<pair<int, int>> que;
+    que.push({x, y});
+
+    while (!que.empty()) {
+        pair<int, int> cur = que.front();
+        que.pop();
+
+        for (int i = 0; i < 4; i++) {
+            int row = cur.first + dir[i][0];
+            int col = cur.second + dir[i][1];
+
+            if (row < 0 || col < 0 || row >= grid.size() || col >= grid[0].size()) continue;
+            if (visit[row][col] == 1) continue;
+            if (grid[row][col] == '0') continue;
+
+            visit[row][col] = 1;
+            que.push({row, col});
+        }
+    }
+}
+```
+[200. Number of Islands]()  
+[695. Max Area of Island]()  
+[1020. Number of Enclaves]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
