@@ -222,9 +222,8 @@ void bfs(vector<vector<char>>& grid, int x, int y, vector<vector<bool>> &visit) 
             int row = cur.first + dir[i][0];
             int col = cur.second + dir[i][1];
 
-            if (row < 0 || col < 0 || row >= grid.size() || col >= grid[0].size()) continue;
-            if (visit[row][col] == 1) continue;
-            if (grid[row][col] == '0') continue;
+            if (row < 0 || col < 0 || row >= grid.size() || col >= grid[0].size()) continue;        //出界的點跳過
+            if (visit[row][col] == 1 || grid[row][col] == '0') continue;                            //走過的點跳過
 
             visit[row][col] = 1;
             que.push({row, col});
