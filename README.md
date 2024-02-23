@@ -188,6 +188,17 @@ construct a tree by inorder & postorder:
 []()  
 []()  
 
+# Dynamic programming
+[343. Integer Break]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
+
 # GRAPH
 ```
 DFS
